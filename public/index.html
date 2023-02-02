@@ -1,17 +1,150 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="zh-cn">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="icon" href="<%= BASE_URL %>橙子.png" type="image/svg+xml">
+    <title>sweet-blog🐱‍🐉</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2649502_cb2uk8h8mij.css">
+    <style>
+      .el-notification__content {
+        margin: 0 !important;
+      }
+      .el-notification {
+        /*background-color: #f4dc61 !important;*/
+      }
+      #app {
+        display: none;
+      }
+      body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #loading ul{
+        list-style: none;
+        display: flex;
+      }
+      #loading ul li{
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        margin-right: 20px;
+        border-radius: 10px;
+      }
+      #loading ul li:nth-child(1){
+        background-color: var(--hl-mono-1);
+        animation: love1 4s 0s infinite;
+      }
+      #loading ul li:nth-child(2){
+        background-color: var(--hl-hue-6-3);
+        animation: love2 4s 0.2s infinite;
+      }
+      #loading ul li:nth-child(3){
+        background-color: var(--hl-hue-1);
+        animation: love3 4s 0.4s infinite;
+      }
+      #loading ul li:nth-child(4){
+        background-color: var(--hl-hue-2);
+        animation: love4 4s 0.6s infinite;
+      }
+      #loading ul li:nth-child(5){
+        background-color: var(--hl-hue-3);
+        animation: love5 4s 0.8s infinite;
+      }
+      #loading ul li:nth-child(6){
+        background-color: var(--hl-hue-4);
+        animation: love4 4s 1s infinite;
+      }
+      #loading ul li:nth-child(7){
+        background-color: var(--hl-hue-5);
+        animation: love3 4s 1.2s infinite;
+      }
+      #loading ul li:nth-child(8){
+        background-color: var(--hl-hue-6);
+        animation: love2 4s 1.4s infinite;
+      }
+      #loading ul li:nth-child(9){
+        background-color: var(--hl-hue-6-2);
+        animation: love1 4s 1.6s infinite;
+      }
+
+      @keyframes love1 {
+        30%,50%{
+          height: 60px;
+          transform: translateY(-30px);
+        }
+        70%,100%{
+          height: 0px;
+          transform: translateY(0px);
+        }
+      }
+      @keyframes love2 {
+        30%,50%{
+          height: 125px;
+          transform: translateY(-60px);
+        }
+        70%,100%{
+          height: 0px;
+          transform: translateY(0px);
+        }
+      }
+
+      @keyframes love3 {
+        30%,50%{
+          height: 160px;
+          transform: translateY(-75px);
+        }
+        70%,100%{
+          height: 0px;
+          transform: translateY(0px);
+        }
+      }
+
+      @keyframes love4 {
+        30%,50%{
+          height: 180px;
+          transform: translateY(-60px);
+        }
+        70%,100%{
+          height: 0px;
+          transform: translateY(0px);
+        }
+      }
+
+      @keyframes love5 {
+        30%,50%{
+          height: 200px;
+          transform: translateY(-45px);
+        }
+        70%,100%{
+          height: 0px;
+          transform: translateY(0px);
+        }
+      }
+    </style>
+<!--    👏-->
   </head>
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <div id="app">
+    </div>
+    <div id="loading">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
   </body>
 </html>
